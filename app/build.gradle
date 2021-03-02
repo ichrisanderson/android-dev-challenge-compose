@@ -1,13 +1,14 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-parcelize'
 }
 
 android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.example.androiddevchallenge"
+        applicationId "com.example.androiddevchallenge.core.androiddevchallenge"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
@@ -73,6 +74,7 @@ dependencies {
     implementation "androidx.compose.material:material-icons-extended:$compose_version"
     implementation "androidx.compose.ui:ui-tooling:$compose_version"
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.0'
+    implementation 'dev.chrisbanes.accompanist:accompanist-insets:0.6.0'
 
     testImplementation 'junit:junit:4.13.2'
 
